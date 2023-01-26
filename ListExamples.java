@@ -1,7 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
+
 interface StringChecker { boolean checkString(String s); }
+
+class MyStringChecker implements StringChecker{
+  public boolean checkString(String s){
+    return s.equalsIgnoreCase("hi");
+  }
+}
 
 class ListExamples {
 
